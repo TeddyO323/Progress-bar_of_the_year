@@ -1,0 +1,7 @@
+/* Increase height when extra info is hidden */
+#capture-area.expanded-height {
+    padding-bottom: 80px;
+    /* Add extra padding to increase height */
+    /* Alternatively, could use min-height if a specific size is preferred */
+    /* min-height: 250px; */
+}
