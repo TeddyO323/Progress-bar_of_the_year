@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (toggleInfoBtn && extraInfo) {
         toggleInfoBtn.addEventListener('click', function () {
             extraInfo.classList.toggle('hidden');
+            captureArea.classList.toggle('expanded-height'); // Toggle class to increase height
             if (extraInfo.classList.contains('hidden')) {
                 toggleInfoBtn.innerText = 'Show Extra Info';
             } else {
