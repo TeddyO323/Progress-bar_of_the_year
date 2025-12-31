@@ -5,15 +5,17 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-text-transform: uppercase;  
-font-family: 'Product Sans Regular', Sans-Serif;
+  text-transform: uppercase;
+  font-family: 'Product Sans Regular', Sans-Serif;
 }
 
 .progress-info {
   text-align: left;
   margin-top: 10px;
-  width: 95%; /* Set the width to match the progress bar container */
-  margin: 0 auto; /* Center the additional info within the container */
+  width: 95%;
+  /* Set the width to match the progress bar container */
+  margin: 0 auto;
+  /* Center the additional info within the container */
   font-size: 150%;
   color: #1a1818;
   margin-left: 0%;
@@ -21,7 +23,8 @@ font-family: 'Product Sans Regular', Sans-Serif;
 
 .progress-container {
   width: 100%;
-  background: #f2f2f2; /* Light gray background */
+  background: #f2f2f2;
+  /* Light gray background */
   height: 48px;
   border-radius: 0px;
   overflow: hidden;
@@ -31,25 +34,31 @@ font-family: 'Product Sans Regular', Sans-Serif;
 .progress-bar {
   height: 48px;
   width: 95%;
-  background-color: #000; /* Black bar */
+  background-color: #000;
+  /* Black bar */
   transition: width 0.5s ease-in-out;
-  color: #333; /* Neutral dark gray for readability */
+  color: #333;
+  /* Neutral dark gray for readability */
 
 }
 
 .extra-info {
   text-align: left;
   margin-top: 10px;
-  width: 95%; /* Set the width to match the progress bar container */
-  margin: 0 auto; /* Center the additional info within the container */
+  width: 95%;
+  /* Set the width to match the progress bar container */
+  margin: 0 auto;
+  /* Center the additional info within the container */
   padding-top: 10%;
   color: #333;
   margin-left: 0%;
 
 }
+
 /* Highlighted percentage */
 .extra-info span {
-  color: #ff9800; /* Bright orange for emphasis */
+  color: #ff9800;
+  /* Bright orange for emphasis */
   font-weight: bold;
 }
 
@@ -61,7 +70,8 @@ font-family: 'Product Sans Regular', Sans-Serif;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   color: #fff;
-  background-color: #007bff; /* Default: Blue */
+  background-color: #007bff;
+  /* Default: Blue */
 }
 
 #screenshot-btn:hover {
@@ -71,23 +81,29 @@ font-family: 'Product Sans Regular', Sans-Serif;
 
 /* Active state (when button is pressed) */
 #screenshot-btn:active {
-    background-color: #3e8e41; /* Even darker green when clicked */
-    transform: translateY(2px); /* Button moves down slightly */
+  background-color: #3e8e41;
+  /* Even darker green when clicked */
+  transform: translateY(2px);
+  /* Button moves down slightly */
 }
 
 /* Disabled button style */
 #screenshot-btn:disabled {
-    background-color: #e0e0e0; /* Light gray */
-    color: #b0b0b0; /* Gray text */
-    cursor: not-allowed; /* No hover effect */
-    box-shadow: none;
+  background-color: #e0e0e0;
+  /* Light gray */
+  color: #b0b0b0;
+  /* Gray text */
+  cursor: not-allowed;
+  /* No hover effect */
+  box-shadow: none;
 }
 
 /* For larger screens */
 @media (min-width: 768px) {
-    #screenshot-btn {
-        font-size: 18px; /* Increase font size on larger screens */
-    }
+  #screenshot-btn {
+    font-size: 18px;
+    /* Increase font size on larger screens */
+  }
 }
 
 #capture-area {
@@ -96,6 +112,51 @@ font-family: 'Product Sans Regular', Sans-Serif;
   width: 95%;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #fff; /* Ensure a white background for clarity */
+  background-color: #fff;
+  /* Ensure a white background for clarity */
   text-align: center;
+}
+
+/* Marker styling */
+.marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.today-marker {
+  background-color: #ff9800;
+  /* Orange for today */
+  width: 3px;
+  z-index: 10;
+  transition: left 0.5s ease-in-out;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#toggle-info-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: #fff;
+  background-color: #6c757d;
+  /* Grey */
+}
+
+#toggle-info-btn:hover {
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none !important;
 }
