@@ -108,7 +108,8 @@ body {
 
 #capture-area {
   display: inline-block;
-  padding: 20px;
+  padding: 40px;
+  padding-bottom: 80px;
   width: 95%;
   border: 1px solid #ccc;
   border-radius: 8px;
