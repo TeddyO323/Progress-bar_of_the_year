@@ -2,35 +2,46 @@
 <html lang="en">
 
 <!-- Mirrored from progress-bar-of-the-year.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Dec 2024 02:58:23 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Year Progress Bar</title>
 </head>
+
 <body>
     <div id="capture-area">
         <div class="progress-info">
-            <p id="progress-message">0% of 2025 has passed.</p>
+            <p id="progress-message">0% of 2026 has passed.</p>
         </div>
         <div class="progress-container">
             <div class="progress-bar" id="progress-bar"></div>
+            <!-- Markers -->
+            <div class="marker" style="left: 25%"></div>
+            <div class="marker" style="left: 50%"></div>
+            <div class="marker" style="left: 75%"></div>
+            <div id="today-marker" class="marker today-marker"></div>
         </div>
 
         <div class="extra-info">
-        <p id="today-date"></p>
-        <p id="current-time"></p>
-        <p id="days-passed"></p>
+            <p id="today-date"></p>
+            <p id="current-time"></p>
+            <p id="days-passed"></p>
+        </div>
+
     </div>
-      
+
+    <div class="controls">
+        <button id="toggle-info-btn">Hide Extra Info</button>
+        <button id="screenshot-btn">Take Screenshot</button>
     </div>
-   
-    <button id="screenshot-btn">Take Screenshot</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
-    
-    
+
+
 
 </body>
 
