@@ -1,7 +1,7 @@
 
 # Year Progress Bar 🌟
 
-![progress-bar](WhatsApp Image 2026-01-01 at 02.22.06.jpeg)
+![progress-bar](/progress2026.jpeg)
 
 A dynamic web application that visualizes the progress of the year in real time. Track how much of the year has passed with engaging features like customizable screenshots, milestone alerts, and interactive updates.
 
