@@ -13,9 +13,7 @@ body {
   text-align: left;
   margin-top: 10px;
   width: 95%;
-  /* Set the width to match the progress bar container */
   margin: 0 auto;
-  /* Center the additional info within the container */
   font-size: 150%;
   color: #1a1818;
   margin-left: 0%;
@@ -23,8 +21,7 @@ body {
 
 .progress-container {
   width: 100%;
-  background: #f2f2f2;
-  /* Light gray background */
+  background: #313131;
   height: 48px;
   border-radius: 0px;
   overflow: hidden;
@@ -34,21 +31,17 @@ body {
 .progress-bar {
   height: 48px;
   width: 95%;
-  background-color: #000;
-  /* Black bar */
+  background: linear-gradient(to right, #00f, rgb(1, 1, 161));
   transition: width 0.5s ease-in-out;
   color: #333;
-  /* Neutral dark gray for readability */
-
+  
 }
 
 .extra-info {
   text-align: left;
   margin-top: 10px;
   width: 95%;
-  /* Set the width to match the progress bar container */
   margin: 0 auto;
-  /* Center the additional info within the container */
   padding-top: 10%;
   color: #333;
   margin-left: 0%;
@@ -58,7 +51,6 @@ body {
 /* Highlighted percentage */
 .extra-info span {
   color: #ff9800;
-  /* Bright orange for emphasis */
   font-weight: bold;
 }
 
@@ -71,7 +63,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
   color: #fff;
   background-color: #007bff;
-  /* Default: Blue */
 }
 
 #screenshot-btn:hover {
@@ -79,30 +70,20 @@ body {
 }
 
 
-/* Active state (when button is pressed) */
 #screenshot-btn:active {
   background-color: #3e8e41;
-  /* Even darker green when clicked */
   transform: translateY(2px);
-  /* Button moves down slightly */
 }
-
-/* Disabled button style */
 #screenshot-btn:disabled {
   background-color: #e0e0e0;
-  /* Light gray */
   color: #b0b0b0;
-  /* Gray text */
   cursor: not-allowed;
-  /* No hover effect */
   box-shadow: none;
 }
 
-/* For larger screens */
 @media (min-width: 768px) {
   #screenshot-btn {
     font-size: 18px;
-    /* Increase font size on larger screens */
   }
 }
 
@@ -114,11 +95,9 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
-  /* Ensure a white background for clarity */
   text-align: center;
 }
 
-/* Marker styling */
 .marker {
   position: absolute;
   top: 0;
@@ -127,14 +106,13 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 5;
 }
-
+/* 
 .today-marker {
   background-color: #ff9800;
-  /* Orange for today */
   width: 3px;
   z-index: 10;
   transition: left 0.5s ease-in-out;
-}
+} */
 
 .controls {
   margin-top: 20px;
@@ -151,7 +129,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
   color: #fff;
   background-color: #6c757d;
-  /* Grey */
 }
 
 #toggle-info-btn:hover {
