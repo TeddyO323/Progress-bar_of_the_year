@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
             todayDate.innerText = `Today's Date: ${currentDate.toDateString()}`;
             currentTime.innerText = `Current Time: ${currentDate.toLocaleTimeString()}`;
             daysPassed.innerText = `Days Passed: Day 365 of 365`;
-            yearPercentageDecimals.innerText = `Year Progress: 100.00000%`;
+            if (yearPercentageDecimals) {
+                yearPercentageDecimals.innerText = `Year Progress: 100.00000%`;
+            }
             return;
         }
 
@@ -54,7 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
         todayDate.innerText = `Today's Date: ${currentDate.toDateString()}`;
         currentTime.innerText = `Current Time: ${currentDate.toLocaleTimeString()}`;
         daysPassed.innerText = `Days Passed: Day ${passedDays} of ${totalDays}`;
-        yearPercentageDecimals.innerText = `Year Progress: ${progressPercentage.toFixed(5)}%`;
+        if (yearPercentageDecimals) {
+            yearPercentageDecimals.innerText = `Year Progress: ${progressPercentage.toFixed(5)}%`;
+        }
     }
 
     setInterval(updateInfo, 1000); // Update every second
