@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const toggleInfoBtn = document.getElementById('toggle-info-btn');
     const extraInfo = document.querySelector('.extra-info');
-    const todayMarker = document.getElementById('today-marker');
+    // const todayMarker = document.getElementById('today-marker');
 
     // Start and end dates for 2026
     const startOfYear = new Date(2026, 0, 1); // Jan 1, 2026 00:00:00
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentDate >= endOfYear) {
             progressMessage.innerText = "100% of 2026 has passed.";
             progressBar.style.width = "100%";
-            todayMarker.style.left = "100%";
+            // todayMarker.style.left = "100%";
             todayDate.innerText = `Today's Date: ${currentDate.toDateString()}`;
             currentTime.innerText = `Current Time: ${currentDate.toLocaleTimeString()}`;
             daysPassed.innerText = `Days Passed: Day 365 of 365`;
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const passedDays = Math.floor(safePassed / (1000 * 60 * 60 * 24)) + 1;
 
         progressBar.style.width = `${progressPercentage}%`;
-        todayMarker.style.left = `${progressPercentage}%`;
+        // todayMarker.style.left = `${progressPercentage}%`;
 
         // Use toFixed(6) or similar for precision if desired, but user just said "percentage". 
         // Showing a few decimals makes it look more "live". The original had Math.floor.
