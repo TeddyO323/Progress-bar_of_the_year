@@ -21,7 +21,7 @@ body {
 
 .progress-container {
   width: 100%;
-  background: #313131;
+  background: #0000002c;
   height: 48px;
   border-radius: 0px;
   overflow: hidden;
@@ -31,7 +31,7 @@ body {
 .progress-bar {
   height: 48px;
   width: 95%;
-  background: linear-gradient(to right, #00f, rgb(1, 1, 161));
+  background: #747474;
   transition: width 0.5s ease-in-out;
   color: #333;
   
